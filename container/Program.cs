@@ -161,7 +161,7 @@ namespace container
         public static string Fullsize(string daten)
         {
             string result = "";
-            short length = (short)daten.Length;
+            int length = (int)daten.Length;
 
             for (int i = length.ToString().Length; i < l; i++)
             {
