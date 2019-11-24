@@ -118,7 +118,7 @@ namespace container {
 
             var infos = head.Split( '\n' );
 
-            var c = 1;
+            var c = 0;
             for (var i = 0; i < infos.Length - 1; i++) {
                 var p = StringSizer.UnSize( infos[i], out var length );
                 var filename = p.Substring( IntLength );
@@ -163,7 +163,7 @@ namespace container {
 #if DEBUG
             Console.WriteLine( "Debug version!" );
 #if pack
-            args = new string[] { "p", @"C:\Users\Private\source\repos\Global\Global.sln", @"C:\Users\Private\source\repos\Global\hallo welt.txt", @"C:\Users\Private\Desktop\Roaming - Kopie.rar" };
+            args = new string[] { "p", @"..\..\..\Global.sln", @"..\..\..\hallo welt.txt"};
 #else
             args = new string[] { "u", filename };
 #endif
