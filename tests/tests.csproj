@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{470F76B6-EA81-44DB-AA02-A0D864F9F68A}</ProjectGuid>
+    <ProjectGuid>{F1C8EC1C-4ACA-49A3-B85D-1F4EC0DD2F5C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>container</RootNamespace>
-    <AssemblyName>container</AssemblyName>
+    <RootNamespace>tests</RootNamespace>
+    <AssemblyName>tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Eternal Framework\Eternal Framework.csproj">
-      <Project>{8c39c554-4976-4469-a273-5124df799361}</Project>
-      <Name>Eternal Framework</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

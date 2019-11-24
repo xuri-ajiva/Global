@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{470F76B6-EA81-44DB-AA02-A0D864F9F68A}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>container</RootNamespace>
-    <AssemblyName>container</AssemblyName>
+    <ProjectGuid>{DEF2E53C-3BC3-4D1A-A90D-61DD1FE934E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>System.Ai</RootNamespace>
+    <AssemblyName>System.Ai</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,9 +32,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,12 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Eternal Framework\Eternal Framework.csproj">
-      <Project>{8c39c554-4976-4469-a273-5124df799361}</Project>
-      <Name>Eternal Framework</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
